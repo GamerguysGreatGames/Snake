@@ -32,7 +32,7 @@ text("Score:"+(score-1)/2,65,30)}else{text("Score:"+0,65,30)}
 drawSprites();
 snakelinecrt();
 controls();
-if(snakehead.isTouching(snakeline)){window.alert("Your fianl score is:"+(score-1)/2);if(eee==eee){}}
+if(snakehead.isTouching(snakeline)){window.alert("Your final score is:"+(score-1)/2);if(eee==eee){}}
 if(snakehead.y>400){snakehead.y=0}
 if(snakehead.y<0){snakehead.y=400}
 if(snakehead.x>400){snakehead.x=0}
