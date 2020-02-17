@@ -12,6 +12,7 @@ screen.visible=false;
 apple=createSprite(random(25,375),random(25,375),20,20)
 apple.shapeColor="red"
 snakehead.shapeColor="yellow"
+frameRate(15)
 }
 function draw(){
 background("blue");
