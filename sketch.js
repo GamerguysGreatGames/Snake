@@ -37,10 +37,6 @@ if(snakehead.y>400){snakehead.y=0}
 if(snakehead.y<0){snakehead.y=400}
 if(snakehead.x>400){snakehead.x=0}
 if(snakehead.x<0){snakehead.x=400}
-if (snakeline.isTouching(apple)){
-apple.destroy();
-apple=createSprite(random(25,375),random(25,375),20,20)
-apple.shapeColor="red";}
 if (snakehead.isTouching(apple)){
 apple.destroy();
 apple=createSprite(random(25,375),random(25,375),20,20)
