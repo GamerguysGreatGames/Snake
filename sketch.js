@@ -72,10 +72,10 @@ if (snakehead.velocityX==-2){swap.x=swap.x+2}
 if (snakehead.velocityY==2){swap.y=swap.y-2}
 if (snakehead.velocityY==-2){swap.y=swap.y+2}
 if (snakehead.isTouching(swap)){
-if(snakehead.x>swap.x){snakehead.x=snakehead.x+10}
-if(snakehead.x<swap.x){snakehead.x=snakehead.x-10}
-if(snakehead.y>swap.y){snakehead.y=snakehead.y+10}
-if(snakehead.y<swap.y){snakehead.y=snakehead.y-10}
+if(snakehead.x>swap.x){snakehead.x=snakehead.x+5}
+if(snakehead.x<swap.x){snakehead.x=snakehead.x-5}
+if(snakehead.y>swap.y){snakehead.y=snakehead.y+5}
+if(snakehead.y<swap.y){snakehead.y=snakehead.y-5}
 }
 swap.life=score-snakelinenumber
 snakeline.add(swap)
@@ -84,11 +84,11 @@ if(os>score){os=0;}
 os++;
 snakelinenumber++;}
 function controls(){
-if (snakehead.velocityX==2){}else{
-if(keyDown("LEFT_ARROW")){snakehead.velocityX=-2;snakehead.velocityY=0}}
-if (snakehead.velocityX==-2){}else{
-if(keyDown("RIGHT_ARROW")){snakehead.velocityX=2;snakehead.velocityY=0}}
-if (snakehead.velocityY==2){}else{
-if(keyDown("UP_ARROW")){snakehead.velocityY=-2;snakehead.velocityX=0}}
-if (snakehead.velocityY==-2){}else{
-if(keyDown("DOWN_ARROW")){snakehead.velocityY=2;snakehead.velocityX=0}}}
+if (snakehead.velocityX==1){}else{
+if(keyDown("LEFT_ARROW")){snakehead.velocityX=-1;snakehead.velocityY=0}}
+if (snakehead.velocityX==-1){}else{
+if(keyDown("RIGHT_ARROW")){snakehead.velocityX=1;snakehead.velocityY=0}}
+if (snakehead.velocityY==1){}else{
+if(keyDown("UP_ARROW")){snakehead.velocityY=-1;snakehead.velocityX=0}}
+if (snakehead.velocityY==-1){}else{
+if(keyDown("DOWN_ARROW")){snakehead.velocityY=1;snakehead.velocityX=0}}}
