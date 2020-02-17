@@ -22,7 +22,7 @@ textSize(30)
 text("Snake",200,100)
 textSize(20)
 text("Press p to play",200,200)
-if (keyDown("p")){snakehead.velocityX=2;play=true;}
+if (keyDown("p")){snakehead.velocityX=1;play=true;}
 }else{
 fill("black")
 textAlign(CENTER)
@@ -67,10 +67,10 @@ past.visible=false;
 function snakelinecrt(){
 swap=createSprite(snakehead.x,snakehead.y,10,10);
 if (os%2==0){swap.shapeColor="green"}else{swap.shapeColor="purple"}
-if (snakehead.velocityX==2){swap.x=swap.x-4}
-if (snakehead.velocityX==-2){swap.x=swap.x+4}
-if (snakehead.velocityY==2){swap.y=swap.y-4}
-if (snakehead.velocityY==-2){swap.y=swap.y+4}
+if (snakehead.velocityX==1){swap.x=swap.x-3}
+if (snakehead.velocityX==-1){swap.x=swap.x+3}
+if (snakehead.velocityY==1){swap.y=swap.y-3}
+if (snakehead.velocityY==-1){swap.y=swap.y+3}
 if (snakehead.isTouching(swap)){
 if(snakehead.x>swap.x){snakehead.x=snakehead.x+8}
 if(snakehead.x<swap.x){snakehead.x=snakehead.x-8}
