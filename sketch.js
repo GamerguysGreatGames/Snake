@@ -67,15 +67,15 @@ past.visible=false;
 function snakelinecrt(){
 swap=createSprite(snakehead.x,snakehead.y,10,10);
 if (os%2==0){swap.shapeColor="green"}else{swap.shapeColor="purple"}
-if (snakehead.velocityX==2){swap.x=swap.x-2}
-if (snakehead.velocityX==-2){swap.x=swap.x+2}
-if (snakehead.velocityY==2){swap.y=swap.y-2}
-if (snakehead.velocityY==-2){swap.y=swap.y+2}
+if (snakehead.velocityX==2){swap.x=swap.x-4}
+if (snakehead.velocityX==-2){swap.x=swap.x+4}
+if (snakehead.velocityY==2){swap.y=swap.y-4}
+if (snakehead.velocityY==-2){swap.y=swap.y+4}
 if (snakehead.isTouching(swap)){
-if(snakehead.x>swap.x){snakehead.x=snakehead.x+5}
-if(snakehead.x<swap.x){snakehead.x=snakehead.x-5}
-if(snakehead.y>swap.y){snakehead.y=snakehead.y+5}
-if(snakehead.y<swap.y){snakehead.y=snakehead.y-5}
+if(snakehead.x>swap.x){snakehead.x=snakehead.x+8}
+if(snakehead.x<swap.x){snakehead.x=snakehead.x-8}
+if(snakehead.y>swap.y){snakehead.y=snakehead.y+8}
+if(snakehead.y<swap.y){snakehead.y=snakehead.y-8}
 }
 swap.life=score-snakelinenumber
 snakeline.add(swap)
