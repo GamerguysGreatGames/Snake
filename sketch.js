@@ -88,4 +88,14 @@ if(keyDown("RIGHT_ARROW")){snakehead.velocityX=2;snakehead.velocityY=0}}
 if (snakehead.velocityY==2){}else{
 if(keyDown("UP_ARROW")){snakehead.velocityY=-2;snakehead.velocityX=0}}
 if (snakehead.velocityY==-2){}else{
-if(keyDown("DOWN_ARROW")){snakehead.velocityY=2;snakehead.velocityX=0}}}
+if(keyDown("DOWN_ARROW")){snakehead.velocityY=2;snakehead.velocityX=0}}
+
+if (snakehead.velocityX==2){}else{
+if(keyDown("a)){snakehead.velocityX=-2;snakehead.velocityY=0}}
+if (snakehead.velocityX==-2){}else{
+if(keyDown("d")){snakehead.velocityX=2;snakehead.velocityY=0}}
+if (snakehead.velocityY==2){}else{
+if(keyDown("w")){snakehead.velocityY=-2;snakehead.velocityX=0}}
+if (snakehead.velocityY==-2){}else{
+if(keyDown("s")){snakehead.velocityY=2;snakehead.velocityX=0}}
+}
